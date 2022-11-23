@@ -1,0 +1,9 @@
+{
+   "url-backend": "127.0.0.1",
+   "port": 8081,
+
+   "db_connection":"mongodb+srv://Laueng:Lau32@misiontic2022.ryajt8z.mongodb.net/academic_db?retryWrites=true&w=majority"
+}
+
+
+

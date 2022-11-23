@@ -6,10 +6,16 @@ from flask_cors import CORS
 from waitress import serve
 
 from blueprints.partidos_blueprint import partidos_blueprints
+from blueprints.candidatos_blueprint import candidatos_blueprints
+from blueprints.resultados_blueprint import resultados_blueprints
+from blueprints.mesas_blueprint import mesas_blueprints
 
 app = Flask(__name__)
 cors = CORS(app)
 app.register_blueprint(partidos_blueprints)
+app.register_blueprint(candidatos_blueprints)
+app.register_blueprint(resultados_blueprints)
+app.register_blueprint(mesas_blueprints)
 
 
 @app.route("/", methods=['GET'])
